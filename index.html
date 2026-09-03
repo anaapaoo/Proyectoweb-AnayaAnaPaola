@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--El meta dato de viewport es para que se adapte a cualquier pantalla-->
     <meta name="author" content="Ana Pao Anaya">
-    <title>Cinepo</title>
+    <title>Dolce</title>
     <!--El título como voy a aparercer en la web-->
     <link rel="stylesheet" href="css/styles.css">
     <!--link rel enlaza con la carpeta y el archivo del css-->
@@ -40,6 +40,91 @@
     </div>
 </header>
 
+<!-- AQUÍ INICIA EL MAIN   -->
+  <main>
+    <!-- HERO con video, SI NO QUIERO VIDEO, pendiente cambiarlo -->
+    <section class="hero video-hero">
+      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
+        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+<!-- estos son los botones que estan dentro del VIDEO-->
+
+      <div class="hero-content container">
+        <div class="hero-actions">
+          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Dolce</a>
+          <a class="btn outline" href="#postres">Al Gusto</a>
+        </div>
+
+        <!-- Esta tarjeta es para colocar estadísticas y la clase de stat es para colocar dattos -->
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">+500,000</div>
+            <div class="stat-label">Ventas</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+12.000</div>
+            <div class="stat-label">Collabs</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+300</div>
+            <div class="stat-label">Productos</div>
+          </div>
+        </div>
+      </div>
+    </section> <!--Fin hero y cierra las estadísticas y todo-->
+
+    <!-- AQUÍ HAY TRES TARJETAS PARA DESTACAR PROYECTOS, VENTAS, PRODUCTOS, SERVICIOS, ETC -->
+
+    <section id="proyectos" class="projects container">
+      <h2>Dolce</h2>
+      <p class="lead">En Dolce brindamos postres de calidad, elaborados con ingredientes frescos y una variedad de sabores para crear experiencias dulces y deliciosas para nuestros clientes.
+      </p>
+
+      <div class="project-cards">
+        <article class="card">
+          <div class="card-img" id="antioquia-caucasia"></div>
+          <div class="card-body">
+            <h3>Personalizados</h3>
+            <p>Creamos postres personalizados para cada ocasión, adaptando diseños, sabores y detalles al gusto.</p>
+          </div>
+
+        </article>
+        <article class="card">
+          <div class="card-img" id="guajira"></div>
+          <div class="card-body">
+            <h3>Especialidades</h3>
+            <p>Descubre nuestras especialidades, desde cheesecakes y cupcakes hasta postres únicos preparados con diferentes sabores.</p>
+          </div>
+
+        </article>
+        <article class="card">
+          <div class="card-img" id="cordoba"></div>
+          <div class="card-body">
+            <h3>Novedades</h3>
+            <p>Descubre nuestros nuevos sabores y combinaciones, creados para ofrecerte opciones innovadoras y deliciosas.</p>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>¡No te pierdas lo último!</h2>
+          <p>Suscríbete para recibir noticias e historias.</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" novalidate>
+          <input id="email" type="email" placeholder="Tu correo electrónico" required />
+          <button class="btn primary" type="submit">Suscribirme</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
+    </section>
+  </main>
+
 <!--AQUÍ INICIA EL FOOTER-->
 
 <footer>
@@ -56,7 +141,7 @@
   </div>
 
     <div class="footer-bottom">
-      <div class="container">&copy; <span id="anio"></span> Fundación Pies con Cora</div>
+      <div class="container">&copy; <span id="anio"></span> 2026 Dolce.</div>
     </div>
   </footer>
 
