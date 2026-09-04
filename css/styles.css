@@ -1,13 +1,13 @@
 /* Reset y Fuentes */
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'monsterrat', sans-serif;
 }
 header {
-    background: #fae1ec;
-    color: #f5f5e9;
+    background: #f3d2e1;
+    color: #fcfcf9;
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -48,7 +48,7 @@ header {
 }
   
 .main-nav ul li a {
-    color:rgb(211, 159, 184);
+    color:rgb(192, 142, 166);
     text-decoration: none;
     margin-left: 2rem;
     display: flex;
@@ -59,18 +59,18 @@ header {
   
 .btn-dona {
     background-color: transparent;
-    color: #a46088;
+    color: #d7a5c2;
   padding: 10px 20px;
   margin-left: 15px;
   border-radius: 10px;
-  border: 1px solid #a35d84;
+  border: 1px solid #bc8ca6;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
 .nav-button:hover {
-    background-color: #a36785;
+    background-color: #d596b6;
   transform: scale(1.05);
   }
 
@@ -88,7 +88,7 @@ header {
 
 .btn.primary {
   background: linear-gradient(45deg, var(--orange), var(--orange-light));
-  color: #d9a0bb;
+  color: #e6d9df;
 }
 
 .btn.primary:hover {
@@ -138,6 +138,154 @@ header {
   color: #d9a0bb;
   opacity: 0.95;
 }
+
+/* Carrusel de imágenes */
+.carousel-section {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.8rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: 600;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: #E8A0BF;
+  color: #fff;
+}
+
+.carousel-btn.prev {
+  left: 12px;
+}
+
+.carousel-btn.next {
+  right: 12px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0.8rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: background 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: #E8A0BF;
+}
+
+
+/* Ajustes de botones y stats SUPERPUESTOS dentro del carrusel */
+.carousel .hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.35); /* oscurece la imagen para que se lea el texto */
+}
+
+.carousel .hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.carousel .btn.primary {
+  background: linear-gradient(45deg, #E8A0BF, #f3c6da);
+  color: #fff;
+}
+
+.carousel .btn.outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.carousel .btn.outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.carousel .stat {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.carousel .stat-number {
+  color: #fff;
+}
+
+.carousel .stat-label {
+  color: #f1f5f9;
+}
+
 
 /* Projects */
 .projects {
@@ -191,19 +339,19 @@ header {
 }
 
 #antioquia-caucasia {
-  background-image: url("../img/personalizado2.webp");
+  background-image: url("../img/personal.webp");
   background-size: cover;
   background-position: center;
 }
 
 #guajira {
-  background-image: url("../img/especialidades2.jpg");
+  background-image: url("../img/especialidad.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #cordoba {
-  background-image: url("../img/img2.jpg");
+  background-image: url("../img/nuevos.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -247,7 +395,7 @@ footer {
 
 .footer-social {
     width: 100%;
-    background-color: #e9bfd1;
+    background-color: #edbdd4;
     padding: 25px 0;
 }
 
@@ -265,13 +413,13 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #9AAF94;
+    color: #85596e;
 }
 
 .footer-bottom {
     width: 100%;
-    background-color: #333;
-    color: white;
+    background-color: #c68fac;
+    color: rgb(253, 250, 250);
     text-align: center;
     padding: 20px 0;
 }
