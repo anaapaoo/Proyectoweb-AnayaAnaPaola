@@ -19,6 +19,7 @@
     <!--link rel enlaza con la carpeta y el archivo del css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 <header class="header">
     <div class="container header-inner">
@@ -27,12 +28,12 @@
       </a>
       <nav class="main-nav" id="mainNav">
         <ul>
-          <li><a href="#Cartelera">Cartelera</a></li>
-          <li><a href="#Boletos">Boletos</a></li>
-          <li><a href="#Dulceria">Dulceria</a></li>
-          <li><a href="#Promociones">Promociones</a></li>
-          <li><a href="#Experiencias">Experiencias</a></li>
+          <li><a href="#Inicio">Inicio</a></li>
+          <li><a href="#Proyectos">Proyectos</a></li>
+          <li><a href="#Nuevos">Nuevos lanzamientos</a></li>
           <li><a href="#Nosotros">Nosotros</a></li>
+          <li><a href="#Más buscados">Más buscados</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
           <li><a class="btn-dona" href="#dona">shop</a></li>
         </ul>
       </nav>
@@ -41,7 +42,7 @@
 </header>
 
 <!-- AQUÍ INICIA EL MAIN   -->
-  <main>
+  <main id="Inicio">
     <!-- HERO con video, SI NO QUIERO VIDEO, pendiente cambiarlo -->
     <!--section class="hero video-hero"-->
       <!--video class="hero-video" id="heroVideo" autoplay loop playsinline->
@@ -56,7 +57,7 @@
 
 
     <!-- CARRUSEL DE IMÁGENES / LANZAMIENTOS / PRODUCTOS ETC -->
-    <section id="lanzamientos" class="carousel-section container">
+    <section id="Lanzamientos" class="carousel-section container">
       <h2>Nuevos Lanzamientos</h2>
 
 
@@ -68,11 +69,11 @@
             <p class="carousel-caption">Nuestros clásicos</p>
           </div>
           <div class="carousel-slide">
-            <img src="img/img3.jpeg" alt="Nuevos Sabores">
+            <img src="img/img5.jpg" alt="Nuevos Sabores">
             <p class="carousel-caption">Nuevos sabores</p>
           </div>
           <div class="carousel-slide">
-            <img src="img/img2.jpg" alt="Asesorías TechIY">
+            <img src="img/img6.jpg" alt="Asesorías TechIY">
             <p class="carousel-caption">Ediciones especiales</p>
           </div>
         </div>
@@ -115,7 +116,7 @@
 
     <!-- AQUÍ HAY TRES TARJETAS PARA DESTACAR PROYECTOS, VENTAS, PRODUCTOS, SERVICIOS, ETC -->
 
-    <section id="proyectos" class="projects container">
+    <section id="Proyectos" class="projects container">
       <h2>Dolce</h2>
       <p class="lead">En Dolce brindamos postres de calidad, elaborados con ingredientes frescos y una variedad de sabores para crear experiencias dulces y deliciosas para nuestros clientes.
       </p>
@@ -165,7 +166,26 @@
 
 <!--AQUÍ INICIA EL FOOTER-->
 
-<footer>
+<footer id="Contacto">
+
+<div class="footer-grid">
+      <div class="contacto">
+        <h3>Contacto</h3>
+        <address>
+          <p>
+            <i class="fa fa-map-marker-alt"></i>
+            <a href="https://maps.app.goo.gl/XEV14hj3EYQPBoaCA" target="_blank" rel="noreferrer noopener">
+            <span style="color: #b9ddff; font-weight: bold">Ubicación: </span> Santa Fe
+            </a>
+          </p>
+          <p>
+            <i class="fa fa-phone"></i>
+            <span style="color: #b9ddff; font-weight: bold">Teléfono: </span> <a href="tel:+5519224580"> 55 1922 4580</a>
+          </p>
+        </address>
+      </div>
+
+
 
 <div class="footer-social">
     <div class="container social-icons">
@@ -183,7 +203,7 @@
     </div>
   </footer>
 
-
+<script src="JS/script.js"></script>
 
 
 

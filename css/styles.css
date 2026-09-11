@@ -1,11 +1,11 @@
 /* Reset y Fuentes */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'monsterrat', sans-serif;
 }
-header {
+.header {
     background: #f3d2e1;
     color: #fcfcf9;
     padding: 1rem;
@@ -21,6 +21,7 @@ header {
 
 
 /* Estilos para el contenedor del logo y el título */
+
   .logo {
   display: flex;
   align-items: center;
@@ -39,12 +40,18 @@ header {
   
   /* BOTONES DE INICIO Y BARRA DE NAVEGACIÓN */
  
-.margin-nav {
+.main-nav {
     margin-left: auto;
     }
+
 .main-nav ul {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     list-style: none;
+    margin: 0;
+    padding: 0;
+
 }
   
 .main-nav ul li a {
@@ -247,7 +254,13 @@ header {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  pointer-events:none;
   background: rgba(0, 0, 0, 0.35); /* oscurece la imagen para que se lea el texto */
+}
+
+.carousel .hero-content a,
+.carousel .hero-content button {
+  pointer-events: auto; 
 }
 
 .carousel .hero-actions {
@@ -388,10 +401,22 @@ header {
 }
 
 
-footer {
+footer .Contacto h3{
     width: 100%;
     display: block;
+    background-color: #ffffff;
+    padding: 40px 20px 20px;
+    text-align: center;
 }
+
+ .footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 100%;
+  margin: 0 auto 20px;
+  text-align: left;
+  }
 
 .footer-social {
     width: 100%;
@@ -407,7 +432,7 @@ footer {
 }
 
 .social-icons a {
-    color: white;
+    color: rgb(151, 83, 120);
     font-size: 24px;
     text-decoration: none;
 }
